@@ -1,0 +1,97 @@
+{
+  "name": "insight",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@svgr/cli": "^8.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "antd": "^5.6.1",
+    "assert": "^2.0.0",
+    "axios": "^1.4.0",
+    "browserify-zlib": "^0.2.0",
+    "chart.js": "^3.5.1",
+    "chartjs-plugin-annotation": "^3.0.1",
+    "class-validator": "^0.14.0",
+    "cors": "^2.8.5",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.3.0",
+    "express": "^4.18.2",
+    "firebase": "^9.22.2",
+    "fontawesome": "^5.6.3",
+    "ibm_db": "^3.2.1",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.4.0",
+    "net-browserify": "^0.1.4",
+    "path-browserify": "^1.0.1",
+    "pg-connection-string": "^2.6.0",
+    "pg-hstore": "^2.3.4",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^3.0.4",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.12.1",
+    "react-scripts": "latest",
+    "redux-thunk": "^2.4.2",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1",
+    "sequelize-typescript": "^2.1.5",
+    "stream-browserify": "^3.0.0",
+    "timers-browserify": "^2.0.12",
+    "tls-browserify": "^0.2.2",
+    "typeorm": "^0.3.16",
+    "typescript": "^5.1.3",
+    "url": "^0.11.1",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.0",
+    "webpack-cli": "^5.1.4",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "sequelize": "sequelize",
+    "migrate": "NODE_ENV=development ts-node ./node_modules/.bin/sequelize db:migrate",
+    "migrate:undo": "NODE_ENV=development ts-node ./node_modules/.bin/sequelize db:migrate:undo"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/chart.js": "^2.9.37",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "webpack": "^5.87.0",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "sequelize-cli": {
+    "config": "./config/config.js",
+    "migrations-path": "./dist/migrations"
+  }
+}
